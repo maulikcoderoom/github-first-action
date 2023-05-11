@@ -12,5 +12,8 @@ jobs:
         #need to define script or action for steps
         run: echo "Hello world"
       - name: Print goodbye
-        run: echo "good bye"
+        # run multiple shell command  adding pipe symbol
+        run: |
+          echo "First output"
+          echo "Second output"
 
