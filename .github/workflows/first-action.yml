@@ -1,0 +1,16 @@
+# start with action name 
+name: first_workflow
+# when to execure this workflow 
+on: workflow_dispatch
+jobs: 
+  first-job: 
+    #define environment for job
+    runs-on: ubuntu-latest
+    #setps need dash -
+    steps: 
+      - name: Print greeting
+        #need to define script or action for steps
+        run: echo "Hello world"
+      - name: Print goodbye
+        run: echo "good bye"
+
